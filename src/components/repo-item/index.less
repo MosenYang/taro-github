@@ -1,0 +1,55 @@
+.list {
+    width: 92%;
+    height: 220px;
+    margin: 0 4%;
+    margin-top: 4%;
+    border-bottom: 2px solid #ECEFF3;
+    font-size: 32px;
+    background: #FFFFFF;
+    &-title {
+        width: 100%;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+        font-weight: 600;
+        font-size: 36px;
+        color: #6190e8;
+    }
+    &-desc {
+        height: 70px;
+        margin-top: 20px;
+        font-size: 28px;
+        font-family: PingFang-SC-Medium;
+        color: #666666;
+        text-overflow: -o-ellipsis-lastline;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        display: -webkit-box;
+        -webkit-line-clamp: 2;
+        line-clamp: 2;
+        -webkit-box-orient: vertical;
+    }
+    &-operation {
+        margin-top: 20px;
+        image {
+            width: 30px;
+            height: 30px;
+            margin-right: 10px;
+            vertical-align: middle;
+        }
+        &-star,
+        &-fork,
+        &-time {
+            display: inline-block;
+            margin-right: 30px;
+            &-text {
+                font-size: 24px;
+                vertical-align: middle;
+                color: #333744;
+            }
+        }
+        &-time {
+            float: right;
+        }
+    }
+}

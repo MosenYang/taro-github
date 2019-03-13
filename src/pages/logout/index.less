@@ -1,0 +1,75 @@
+.page {
+    padding: 0 4%;
+    padding: 30px;
+    font-size: 30px;
+    &-title {
+        font-family: PingFangSC-Semibold;
+        font-weight: 600;
+        font-size: 40px;
+        color: #4A4A4A;
+        letter-spacing: 0;
+    }
+    .list {
+        padding: 40px 0;
+        .listItem {
+            margin-top: 50px;
+            position: relative;
+            padding-left: 30px;
+            font-family: PingFang-SC-Medium;
+            font-size: 28px;
+            color: #5A5B5D;
+        }
+        .listItem::before {
+            content: "";
+            position: absolute;
+            top: 15px;
+            left: 0;
+            width: 12px;
+            height: 12px;
+            border-radius: 50%;
+            background: #24292e;
+        }
+    }
+    .form {
+        text-align: center;
+        margin-top: 200px;
+        border-top: 2px solid #DFE5EB;
+        .title {
+            width: 250px;
+            text-align: center;
+            background: #FFFFFF;
+            margin: 0 auto;
+            margin-top: -20px;
+            font-family: PingFang-SC-Medium;
+            font-size: 24px;
+            color: #8D93A8;
+        }
+        .keepLogin,
+        .logout {
+            width: 100%;
+            margin: 0 auto;
+            line-height: 50px;
+            border-radius: 30px;
+            margin-top: 20px;
+            line-height: 90px;
+            border-radius: 45px;
+        }
+        .keepLogin {
+            background: #24292e;
+            color: white;
+            margin-top: 120px;
+        }
+        .logout {
+            background: white;
+            color: #24292e;
+            border: 2px solid #24292e;
+            margin-top: 60px;
+        }
+    }
+}
+
+.at-modal-content {
+    text-align: center;
+    line-height: 100px;
+    min-height: 100px;
+}
